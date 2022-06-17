@@ -1,13 +1,18 @@
 public class main {
     public static void main(String[] args) {
         System.out.println("teste");
-        folkViolao PrototipoCanon1 = new folkViolao();
-        classicoViolao PrototipoCanon2 = new classicoViolao();
+        folkViolao folk = new folkViolao();
+        classicoViolao classic = new classicoViolao();
 
 
-       ViolaoPrototype Violaonovo = PrototipoCanon1.clonar();
-      Violaonovo.setValorCompra(2500);
-● CanonPrototype T4iusada = PrototipoCanon1.clonar();
-● T4iusada.setValorCompra(1000);
+       ViolaoPrototype violaonovo = folk.clonar();
+       violaonovo.setValorCompra(2500);
+       ViolaoPrototype violaousado = folk.clonar();
+       violaonovo.setValorCompra(1500);
+
+  
+
+       System.out.println(violaousado.exibirInfo);
+
     }
 }
