@@ -11,4 +11,5 @@
     public void setValorCompra(double valorCompra) {
         this.valorCompra = valorCompra;
     }
+    public abstract String exibirInfo();
 }
